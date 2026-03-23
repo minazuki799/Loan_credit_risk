@@ -39,6 +39,8 @@ df_cred.loan_int_rate = df_cred['loan_int_rate'].fillna(
 df_cred.person_emp_length = df_cred['person_emp_length'].fillna(
     df_cred.person_emp_length.mean())
 
+# dealing with outliers
+df_cred = df_cred[df_cred.person_age <= 120]
 # feature engineering
 df_cred['credit_start_year'] = df_cred.person_age - \
     df_cred.cb_person_cred_hist_length
