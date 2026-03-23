@@ -54,7 +54,7 @@ def show_prediction_page():
         
         - **Employment Length** — Number of years the applicant has been employed. Longer employment suggests greater financial stability.
         
-        - **Credit Start Year** — The year the applicant's credit history began. A longer credit history generally indicates a more reliable borrower.
+        - **Credit Entry Age** — The age of the applicant when the applicant's credit history began. A longer credit history generally indicates a more reliable borrower.
         
         - **Loan Grade** — A credit rating assigned to the loan based on the applicant's credit profile:
             - *A* — Excellent — lowest risk
@@ -96,7 +96,7 @@ def show_prediction_page():
     with col2:
         st.subheader("👤 Personal Details")
         person_emp_length = st.slider("Employment Length", 0, 50, 5,help="Number of years the applicant has been employed")
-        credit_start_year = st.number_input("Credit Start Year", 1990, 2025, 2015,help="The year the applicant's credit history began")
+        credit_start_year = st.number_input("Credit Entry Age", 14, 100, 18,help="The age of the applicant when the applicant's credit history began.)
         loan_grade = st.selectbox("Loan Grade", ["A","B","C","D","E","F","G"],help="Credit grade assigned to the loan — A is best, G is highest risk")
         person_home_ownership = st.selectbox("Home Ownership", ["RENT","OWN","MORTGAGE","OTHER"],help="The applicant's current home ownership status")
         loan_intent = st.selectbox("Loan Intent", ["PERSONAL","EDUCATION","MEDICAL","VENTURE","HOMEIMPROVEMENT","DEBTCONSOLIDATION"],help="The purpose for which the loan is being requested")
@@ -170,7 +170,7 @@ def show_prediction_page():
                 "Annual Income", "Loan Amount", "Interest Rate",
                 "Loan % of Income", "Employment Length", "Loan Grade",
                 "Home Ownership", "Loan Intent", "Previous Default",
-                "Credit Start Year"
+                "Credit Entry Age"
             ],
             "Value": [
                 f"${person_income:,.0f}", f"${loan_amnt:,.0f}",
@@ -315,7 +315,7 @@ def show_scenario_analysis_page():
             "Interest Rate (%)",
             "Loan % of Income",
             "Employment Length",
-            "Credit Start Year",
+            "Credit Entry Age",
             "Loan Grade",
             "Home Ownership",
             "Loan Intent",
@@ -351,8 +351,8 @@ def show_scenario_analysis_page():
                            int(baseline_customer["person_emp_length"]))
         customer_wi["person_emp_length"] = new_val
 
-    elif feature_to_change == "Credit Start Year":
-        new_val = st.number_input("Credit Start Year", 1990, 2025, 
+    elif feature_to_change == "Credit Entry Age":
+        new_val = st.number_input("Credit Entry Age", 14, 100, 
                                   int(baseline_customer["credit_start_year"]))
         customer_wi["credit_start_year"] = new_val
 
