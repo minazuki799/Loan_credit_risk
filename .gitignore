@@ -1,0 +1,13 @@
+# Environments
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large files
+*.csv
+
+# OS files
+.DS_Store

@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+pandas = "*"
+matplotlib = "*"
+numpy = "*"
+scikit-learn = "*"
+xgboost = "*"
+seaborn = "*"
+swiftmltoolz = {git = "https://github.com/minazuki799/swiftmltoolz.git"}
+streamlit = "*"
+plotly = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
