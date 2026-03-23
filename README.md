@@ -69,6 +69,6 @@ streamlit run streamlit_app.py
 - GitHub: [minazuki799](https://github.com/minazuki799)
 - LinkedIn: [victor-okosun](https://linkedin.com/in/victor-okosun)
 
-## Copy Url
+## Application Url
 ```
 https://loancreditrisk-kpprxkmo2vyrmjumjukc9t.streamlit.app/
