@@ -96,7 +96,7 @@ def show_prediction_page():
     with col2:
         st.subheader("👤 Personal Details")
         person_emp_length = st.slider("Employment Length", 0, 50, 5,help="Number of years the applicant has been employed")
-        credit_start_year = st.number_input("Credit Entry Age", 14, 100, 18,help="The age of the applicant when the applicant's credit history began.)
+        credit_start_year = st.number_input("Credit Entry Age", 14, 100, 18,help="The age of the applicant when the applicant's credit history began.")
         loan_grade = st.selectbox("Loan Grade", ["A","B","C","D","E","F","G"],help="Credit grade assigned to the loan — A is best, G is highest risk")
         person_home_ownership = st.selectbox("Home Ownership", ["RENT","OWN","MORTGAGE","OTHER"],help="The applicant's current home ownership status")
         loan_intent = st.selectbox("Loan Intent", ["PERSONAL","EDUCATION","MEDICAL","VENTURE","HOMEIMPROVEMENT","DEBTCONSOLIDATION"],help="The purpose for which the loan is being requested")
