@@ -2,7 +2,7 @@
 
 A machine learning web app that predicts the probability of a loan applicant defaulting, built with XGBoost and Streamlit.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://your-app-url.streamlit.app](https://loancreditrisk-kpprxkmo2vyrmjumjukc9t.streamlit.app/)/)
 
 ---
 
