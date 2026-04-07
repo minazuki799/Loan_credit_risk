@@ -45,7 +45,7 @@ jobs:
 
           try:
               print("Opening Streamlit app...")
-              driver.get("https://streamlit.app")
+              driver.get("https://loancreditrisk-kpprxkmo2vyrmjumjukc9t.streamlit.app/")
 
               # Wait for page to load
               time.sleep(15)
